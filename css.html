@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        height: 3000px;
+      }
+
+      .box {
+        position: relative;
+      }
+
+      .one {
+        position: absolute;
+        /* width: 100%; */
+        bottom: -20px;
+        right: -20px;
+      }
+
+      .two {
+        position: sticky;
+        top: 0;
+      }
+
+      .three {
+        position: absolute;
+        top: -50px;
+        left: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box border border-3 border-primary m-5" style="height: 300px">
+      <div class="p-3 one bg-black"></div>
+      <div class="p-4 two bg-secondary"></div>
+      <div class="p-5 three bg-info"></div>
+    </div>
+  </body>
+</html>
